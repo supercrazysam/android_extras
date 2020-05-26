@@ -14,8 +14,15 @@
  * the License.
  */
 
+/*
 task wrapper(type: Wrapper) {
   gradleVersion = "4.10.2"
+} */
+
+// Configuring the wrapper, the new way (since Gradle 4.8) 
+// see https://docs.gradle.org/current/userguide/gradle_wrapper.html#customizing_wrapper
+wrapper{
+    gradleVersion = '4.10.2'
 }
 
 buildscript {
