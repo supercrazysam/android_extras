@@ -235,6 +235,11 @@ public class MainActivity extends RosActivity {
 
         ActivityCompat.requestPermissions(this, PERMISSIONS, 0);
 
+        //important permission  //added by Sam
+        ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+
+        ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.CAMERA}, 1);
+
         if(isSensors) {
 
             int sensorDelay = 10000; // 10,000 us == 100 Hz for Android 3.1 and above
